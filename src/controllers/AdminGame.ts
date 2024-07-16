@@ -11,7 +11,7 @@ import {
 } from "../schema/MongoSchema";
 import { updateWinLossStatus } from "../helpers/UpdateWinLossStatus";
 import { messaging } from "../firebase";
-import { pattiChart } from "helpers/PattiData";
+import { pattiChart } from "../helpers/PattiData";
 
 export const addOrChangeUpi = async (req: Request, res: Response) => {
   const { upiID, payeeName } = req.body;
